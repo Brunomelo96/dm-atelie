@@ -1,0 +1,11 @@
+@import 'components/layout.module.scss';
+@import 'components/theme.module.scss';
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+  padding: $spacing-medium;
+  background-color: $background-tertiary;
+  border-radius: $border-radius-round;
+}

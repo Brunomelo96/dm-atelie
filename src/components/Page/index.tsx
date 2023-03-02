@@ -14,7 +14,11 @@ const Page = ({ children }: PageProps) => {
       >
         {children}
       </main>
-      <Sidebar />
+      <div
+        className={style.Wrapper}
+      >
+        <Sidebar />
+      </div>
     </div>
   )
 }

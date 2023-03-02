@@ -1,0 +1,19 @@
+@import 'components/layout.module.scss';
+@import 'components/theme.module.scss';
+
+.Link {
+    display: flex;
+    justify-content: center;
+    padding: $spacing-large;
+    border-radius: $border-radius-round;
+    background-color: white;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: red;
+    }
+
+    &:active {
+        background-color: green;
+    }
+}

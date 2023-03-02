@@ -1,0 +1,13 @@
+@import '@/components/layout.module.scss';
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+}
+
+.List {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: $spacing-medium;
+}

@@ -1,12 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom'
 import usePage from '@/components/Page'
 import { RouteRender, Routes } from '@/models/routes'
+import Home from '@/pages/Home'
 
 const routes: RouteRender[] = [
   {
     path: Routes.HOME,
     exact: true,
-    element: <div>home</div>,
+    element: <Home />,
   },
 ]
 
