@@ -1,0 +1,12 @@
+@import './colors.module.scss';
+
+$text-primary: $gray-90;
+$text-secondary: $gray-80;
+$text-title: $pink;
+
+$background-primary: $background;
+$background-secondary: lighten($background, 20%);
+$background-tertiary: lighten($background, 25%);
+
+$border-color-primary: $gray-90;
+$border-color-secondary: $gray-80;
