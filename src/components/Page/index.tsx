@@ -1,4 +1,5 @@
 import Sidebar from '@/components/Sidebar'
+import Cart from '../Cart'
 import style from './Page.module.scss'
 
 interface PageProps {
@@ -10,9 +11,12 @@ const Page = ({ children }: PageProps) => {
   return (
     <div className={style.Grid}>
       <main
-        className={style.Wrapper}
+        className={style.Main}
       >
-        {children}
+        <Cart />
+        <div className={style.Wrapper}>
+          {children}
+        </div>
       </main>
       <div
         className={style.Wrapper}

@@ -1,4 +1,5 @@
 import Text from '@/components/Text'
+import Item from './Item'
 import style from './Services.module.scss'
 
 const Services = () => {
@@ -17,8 +18,8 @@ const Services = () => {
       <ul
         className={style.List}
       >
-        <li>Pence Barra</li>
-        <li>Remendo Chavoso</li>
+        <Item />
+        <Item />
       </ul>
     </section>
   )

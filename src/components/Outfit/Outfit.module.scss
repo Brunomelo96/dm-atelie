@@ -1,0 +1,25 @@
+@import '@/components/layout.module.scss';
+@import '@/components/theme.module.scss';
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-mini;
+}
+
+.Info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Image {
+  height: 16ch;
+  background-color: $primary;
+  border-radius: $border-radius-round;
+}

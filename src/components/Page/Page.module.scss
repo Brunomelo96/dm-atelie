@@ -1,9 +1,13 @@
 @import '@/components/theme.module.scss';
 @import '@/components/layout.module.scss';
 
-.Wrapper {
+.Main {
   display: flex;
   flex-direction: column;
+  gap: $spacing-large;
+}
+
+.Wrapper {
   border: 1px solid $background-secondary;
   border-radius: $border-radius-round;
 

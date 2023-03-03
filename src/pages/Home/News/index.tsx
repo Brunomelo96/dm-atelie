@@ -1,27 +1,25 @@
 import Text from '@/components/Text'
+import Item from './Item'
 import style from './News.module.scss'
 
-const News = () => {
-
-  return (
-    <section
-      className={style.Wrapper}
+const News = () => (
+  <section
+    className={style.Wrapper}
+  >
+    <Text
+      text="Lançamentos"
+      weight="bold"
+      element="h3"
+      fontSize="large"
+      color='title'
+    />
+    <ul
+      className={style.List}
     >
-      <Text
-        text="Lançamentos"
-        weight="bold"
-        element="h3"
-        fontSize="large"
-        color='title'
-      />
-      <ul
-        className={style.List}
-      >
-        <li>Cropped Fofis</li>
-        <li>Regata Alada</li>
-      </ul>
-    </section>
-  )
-}
+      <Item />
+      <Item />
+    </ul>
+  </section>
+)
 
 export default News

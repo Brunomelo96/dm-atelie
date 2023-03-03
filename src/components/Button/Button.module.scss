@@ -1,0 +1,33 @@
+@import '@/components/theme.module.scss';
+@import '@/components/layout.module.scss';
+
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-default $spacing-medium;
+  border-radius: $border-radius-round;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.Primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  box-shadow: 0px 2px 1px $primary;
+}
+
+.Secondary {
+  background-color: $secondary;
+  border: 1px solid $secondary;
+  box-shadow: 0px 2px 1px $secondary;
+}
+
+.Tertiary {
+  background-color: $tertiary;
+  border: 1px solid $tertiary;
+  box-shadow: 0px 2px 1px $tertiary;
+}
