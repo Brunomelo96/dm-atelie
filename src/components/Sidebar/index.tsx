@@ -1,4 +1,6 @@
 import Contact from '@/components/Contact'
+import Collection from '@/components/Collection'
+import CustomTailor from '@/components/CustomTailor'
 import style from './Sidebar.module.scss'
 
 const Sidebar = () => (
@@ -10,7 +12,10 @@ const Sidebar = () => (
         <Contact />
       </li>
       <li>
-        <Contact />
+        <Collection />
+      </li>
+      <li>
+        <CustomTailor />
       </li>
     </ul>
   </aside>

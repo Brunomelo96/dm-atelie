@@ -1,5 +1,4 @@
 import Text from '@/components/Text'
-import Icon from '@/components/Icon'
 import { Link } from 'react-router-dom'
 import style from './Cart.module.scss'
 import { Routes } from '@/models/routes'
@@ -14,10 +13,16 @@ const Cart: React.FC<CartProps> = ({ count }) => {
     <section
       className={style.Wrapper}
     >
-      <Icon
-        icon={<div>cart</div>}
-        onClick={() => { console.log('a') }}
-      />
+      <Link
+        to={Routes['HOME']}
+        className={style.CartIconLink}
+        aria-label='Ir para meu carrinho'
+      >
+        <Text
+          text='🛒'
+          fontSize='large'
+        />
+      </Link>
       <Text
         text={count === 0 ? 'Seu carrinho está vazio' : `${count} items no meu carrinho`}
         fontSize="medium"

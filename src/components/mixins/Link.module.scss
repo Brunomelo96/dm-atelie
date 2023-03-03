@@ -3,11 +3,11 @@
 @import '@/components/placeholders/index.module.scss';
 
 @mixin Link($padding) {
-    @extend .Clickable;
-    display: flex;
-    justify-content: center;
-    padding: $padding;
-    border-radius: $border-radius-round;
-    background-color: $primary;
-    text-decoration: none;
+	@extend .Clickable;
+	display: flex;
+	justify-content: center;
+	padding: $padding;
+	border-radius: $border-radius-round;
+	background-color: $primary;
+	text-decoration: none;
 }

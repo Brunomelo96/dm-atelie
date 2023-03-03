@@ -2,6 +2,16 @@
 @import '@/components/theme.module.scss';
 @import '@/components/layout.module.scss';
 
+.Button {
+  @include Card($primary);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: $spacing-medium;
+  outline: none;
+  border: none;
+}
+
 .Wrapper {
   @include Card($primary);
   align-items: center;

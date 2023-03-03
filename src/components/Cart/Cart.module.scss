@@ -1,10 +1,24 @@
 @import '@/components/layout.module.scss';
 @import '@/components/mixins/index.module.scss';
+@import '@/components/placeholders/index.module.scss';
 
 .Wrapper {
   display: flex;
   gap: $spacing-medium;
   align-items: center;
+}
+
+.CartIconLink {
+  @extend .Clickable;
+  @include BoxShadow($primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-decoration: none;
+  border-radius: $border-radius-circle;
+  background-color: $primary;
+  width: 6ch;
+  height: 6ch;
 }
 
 .CartLink {

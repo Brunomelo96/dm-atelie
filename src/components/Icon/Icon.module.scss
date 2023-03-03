@@ -1,6 +1,7 @@
 @import '@/components/theme.module.scss';
 @import '@/components/layout.module.scss';
 @import '@/components/placeholders/index.module.scss';
+@import '@/components/mixins/index.module.scss';
 
 .Button {
   @extend .Clickable; 
@@ -9,9 +10,10 @@
 
 .Wrapper {
   @extend .Circle;
+  @include BoxShadow($primary);
+  display: flex;
   width: 40px;
   height: 40px;
-  box-shadow: 0px 2px 2px $primary;
   border: none;
   outline: none;
 }

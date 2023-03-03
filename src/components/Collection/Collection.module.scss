@@ -3,9 +3,10 @@
 @import '@/components/layout.module.scss';
 
 .Wrapper {
-  @include Card($primary);
+  @include Link($spacing-medium);
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   gap: $spacing-medium;
+
 }
