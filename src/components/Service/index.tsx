@@ -34,9 +34,12 @@ const Service: React.FC<ServiceProps> = ({
           text={service.name}
           element="h6"
           fontSize="medium"
+          weight="bold"
         />
         <Text
           text={service.price}
+          fontSize="large"
+          weight="bold"
         />
       </div>
       <Text

@@ -1,11 +1,11 @@
 @import '@/components/layout.module.scss';
 @import '@/components/theme.module.scss';
 
-.Card {
+@mixin Card($backgroundColor) {
   display: flex;
   flex-direction: column;
   gap: $spacing-medium;
   padding: $spacing-medium;
-  background-color: $background-tertiary;
+  background-color: $backgroundColor;
   border-radius: $border-radius-round;
 }

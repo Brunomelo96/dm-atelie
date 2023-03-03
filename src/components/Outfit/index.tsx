@@ -39,11 +39,14 @@ const Outfit: React.FC<OutfitProps> = ({
           />
           <Text
             text={outfit.price}
+            fontSize="large"
+            weight="bold"
           />
         </div>
         <Text
           text={outfit.description}
           element="p"
+          fontSize="medium"
         />
       </div>
       <Counter
