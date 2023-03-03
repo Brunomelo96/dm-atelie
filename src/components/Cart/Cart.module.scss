@@ -1,0 +1,12 @@
+@import '@/components/layout.module.scss';
+@import '@/components/mixins/index.module.scss';
+
+.Wrapper {
+  display: flex;
+  gap: $spacing-medium;
+  align-items: center;
+}
+
+.CartLink {
+  @include Link($spacing-medium);
+}

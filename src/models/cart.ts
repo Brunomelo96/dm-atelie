@@ -7,4 +7,6 @@ export interface CartState {
 export interface CartContext extends CartState {
   onAdd: (id: Product['id']) => void,
   onRemove: (id: Product['id']) => void,
+  getCount: () => number,
+  getCountById: (id: Product['id']) => number,
 }

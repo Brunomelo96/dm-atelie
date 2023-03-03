@@ -12,6 +12,12 @@ const initialState: State = {
   items: [],
 }
 
+const removeItem = (items: State['items'], payload: string): State['items'] => {
+  const itemIndex = items.indexOf(payload)
+  items.splice(itemIndex, 1)
+  return items
+}
+
 const reducer = (state: State, action: Action) => {
   switch (action.type) {
   case 'add':
@@ -22,7 +28,7 @@ const reducer = (state: State, action: Action) => {
   case 'remove':
     return ({
       ...state,
-      items: state.items.filter((itemId) => itemId !== action.payload)
+      items: removeItem([...state.items], action.payload),
     })
   default:
     return ({ ...initialState })  

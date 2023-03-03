@@ -2,6 +2,33 @@ import Text from '@/components/Text'
 import Item from './Item'
 import style from './Services.module.scss'
 
+const services = [
+  {
+    id: '1',
+    name: 'Jujubs',
+    price: '100,00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
+  },
+  {
+    id: '2',
+    name: 'Jujubs',
+    price: '100,00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
+  },
+  {
+    id: '12312',
+    name: 'Jujubs',
+    price: '100,00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
+  }
+]
+
 const Services = () => {
   
   return (
@@ -18,8 +45,14 @@ const Services = () => {
       <ul
         className={style.List}
       >
-        <Item />
-        <Item />
+        {
+          services.map((value) => (
+            <Item
+              item={value}
+              key={value.id}
+            />
+          ))
+        }
       </ul>
     </section>
   )

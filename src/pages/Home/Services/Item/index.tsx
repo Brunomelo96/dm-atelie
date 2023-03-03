@@ -3,26 +3,21 @@ import { useCart } from '@/contexts/useCart'
 import { Service as ServiceModel } from '@/models/service'
 
 interface ItemProps {
-  item?: ServiceModel
+  item: ServiceModel
 }
 
 const Item: React.FC<ItemProps> = ({
-  item = {
-    id: '1',
-    name: 'Jujubs',
-    price: '100,00',
-    averageTime: '1',
-    description: 'a',
-    image: '1'
-  }
+  item
 }) => {
-  const { onAdd } = useCart()
+  const { onAdd, onRemove, getCountById } = useCart()
 
   return (
     <li>
       <Service
         service={item}
-        onClick={() => onAdd(item.id)}
+        onAdd={() => onAdd(item.id)}
+        onRemove={() => onRemove(item.id)}
+        count={getCountById(item.id)}
       />
     </li>
   )

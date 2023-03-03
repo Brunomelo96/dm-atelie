@@ -1,0 +1,13 @@
+@import '@/components/layout.module.scss';
+@import '@/components/theme.module.scss';
+@import '@/components/placeholders/index.module.scss';
+
+@mixin Link($padding) {
+    @extend .Clickable;
+    display: flex;
+    justify-content: center;
+    padding: $padding;
+    border-radius: $border-radius-round;
+    background-color: white;
+    text-decoration: none;
+}

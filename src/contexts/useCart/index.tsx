@@ -13,12 +13,17 @@ const CartProvider = (
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onAdd = (id: Product['id']) => { dispatch({ type: 'add', payload: id })}
-  const onRemove = (id: Product['id']) => { dispatch({ type: 'remove', payload: id })}
+  const onRemove = (id: Product['id']) => { dispatch({ type: 'remove', payload: id }) }
+  const getCountById = (id: Product['id']): number => state.items
+    .filter((value) => value == id)?.length ?? 0
+  const getCount = (): number => state.items.length ?? 0 
 
   const values: CartContextModel = {
     items: state.items,
     onAdd,
     onRemove,
+    getCount,
+    getCountById,
   }
 
   return (

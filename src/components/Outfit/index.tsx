@@ -1,16 +1,20 @@
 import Text from '@/components/Text'
-import Button from '@/components/Button'
+import Counter from '@/components/Counter'
 import { Outfit as OutfitModel } from '@/models/outfit'
 import style from './Outfit.module.scss'
 
 interface OutfitProps {
   outfit: OutfitModel,
-  onClick: VoidFunction,
+  count: number,
+  onAdd: VoidFunction,
+  onRemove: VoidFunction,
 }
 
 const Outfit: React.FC<OutfitProps> = ({
   outfit,
-  onClick,
+  count,
+  onAdd,
+  onRemove,
 }) => {
 
   return (
@@ -42,10 +46,10 @@ const Outfit: React.FC<OutfitProps> = ({
           element="p"
         />
       </div>
-      <Button
-        text='Adicionar'
-        onClick={onClick}
-        color='primary'
+      <Counter
+        count={count}
+        onAdd={onAdd}
+        onRemove={onRemove}
       />
     </div>
   )

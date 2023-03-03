@@ -1,16 +1,20 @@
 import Text from '@/components/Text'
-import Button from '@/components/Button'
 import { Service as ServiceModel } from '@/models/service'
 import style from './Service.module.scss'
+import Counter from '@/components/Counter'
 
 interface ServiceProps {
   service: ServiceModel,
-  onClick: VoidFunction,
+  count: number,
+  onAdd: VoidFunction,
+  onRemove: VoidFunction,
 }
 
 const Service: React.FC<ServiceProps> = ({
   service,
-  onClick
+  count,
+  onAdd,
+  onRemove
 }) => (
   <div
     className={style.Wrapper}
@@ -40,10 +44,10 @@ const Service: React.FC<ServiceProps> = ({
         element="p"
       />
     </div>
-    <Button
-      text='Adicionar'
-      onClick={onClick}
-      color='primary'
+    <Counter
+      count={count}
+      onAdd={onAdd}
+      onRemove={onRemove}
     />
   </div>
 )
