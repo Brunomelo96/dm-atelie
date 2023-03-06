@@ -1,4 +1,5 @@
 import Icon from '@/components/Icon'
+import Text from '@/components/Text'
 import style from './Counter.module.scss'
 
 interface CounterProps {
@@ -18,7 +19,13 @@ const Counter: React.FC<CounterProps> = ({
       className={style.Wrapper}
     >
       <Icon
-        icon={<div>-</div>}
+        icon={
+          <Text
+            text='-'
+            weight='bold'
+            fontSize='xxxl'
+          />
+        }
         onClick={onRemove}
       />
       <span
@@ -27,7 +34,13 @@ const Counter: React.FC<CounterProps> = ({
         {count}
       </span>
       <Icon
-        icon={<div>+</div>}
+        icon={
+          <Text
+            text='+'
+            weight='bold'
+            fontSize='xxxl'
+          />
+        }
         onClick={onAdd}
       />
     </div>

@@ -1,0 +1,15 @@
+@import '@/components/layout.module.scss';
+@import '@/components/theme.module.scss';
+
+.Wrapper {
+  text-decoration: none;
+  width: 10ch;
+
+  & > *:hover {
+    color: $pink;
+  }
+
+  & > *:active {
+    color: lighten($pink, 1.2);
+  }
+}

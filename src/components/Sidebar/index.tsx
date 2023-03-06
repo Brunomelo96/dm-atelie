@@ -1,5 +1,5 @@
 import Contact from '@/components/Contact'
-import Collection from '@/components/Collection'
+import Collection from '@/components/Collections'
 import CustomTailor from '@/components/CustomTailor'
 import style from './Sidebar.module.scss'
 

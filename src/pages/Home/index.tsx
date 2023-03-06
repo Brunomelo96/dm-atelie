@@ -6,8 +6,8 @@ const Home = () => (
   <div
     className={style.Wrapper}
   >
-    <News />
     <Services />
+    <News />
   </div>
 )
 

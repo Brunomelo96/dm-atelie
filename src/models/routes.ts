@@ -1,5 +1,7 @@
 export enum Routes {
   'HOME' = '/',
+  'CART' = '/cart',
+  'COLLECTIONS' = '/collections'
 }
 
 export type RouteLabel = {
@@ -8,6 +10,8 @@ export type RouteLabel = {
 
 export const RoutesLabels: RouteLabel = {
   'HOME': 'Início',
+  'CART': 'Carrinho',
+  'COLLECTIONS': 'Coleções'
 }
 
 export interface RouteRender {

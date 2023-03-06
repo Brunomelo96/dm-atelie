@@ -1,0 +1,7 @@
+@import '@/components/layout.module.scss';
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+}

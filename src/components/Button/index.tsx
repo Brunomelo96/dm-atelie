@@ -3,7 +3,7 @@ import style from './Button.module.scss'
 
 interface ButtonProps {
   text: string,
-  color: 'primary' | 'secondary' | 'tertiary', 
+  color?: 'primary' | 'secondary' | 'tertiary', 
   onClick: VoidFunction,
   disabled?: boolean
 }
@@ -16,7 +16,7 @@ const colorClasses = {
 
 const Button: React.FC<ButtonProps> = ({
   text,
-  color,
+  color = 'primary',
   disabled=false,
   onClick,
 }) => {
@@ -31,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
       <Text
         text={text}
         fontSize="medium"
+        weight='bold'
       />
     </button>
   )

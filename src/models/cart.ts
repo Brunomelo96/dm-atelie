@@ -10,3 +10,10 @@ export interface CartContext extends CartState {
   getCount: () => number,
   getCountById: (id: Product['id']) => number,
 }
+
+export interface CartListItem {
+  name: string,
+  count: number,
+  onAdd: VoidFunction,
+  onRemove: VoidFunction,
+}

@@ -1,8 +1,9 @@
 import Text from '@/components/Text'
-import style from './Collection.module.scss'
+import style from './Collections.module.scss'
 import { Link } from 'react-router-dom'
 import { Routes } from '@/models/routes'
-const Collection = () => (
+
+const Collections = () => (
   <Link
     className={style.Wrapper}
     to={Routes['HOME']}
@@ -21,4 +22,4 @@ const Collection = () => (
 )
 
 
-export default Collection
+export default Collections

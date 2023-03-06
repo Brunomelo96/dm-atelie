@@ -3,8 +3,9 @@
 @import '@/components/placeholders/index.module.scss';
 
 .Wrapper {
-  display: flex;
-  gap: $spacing-medium;
+  display: grid;
+  grid-template-columns: 6ch 20ch 24ch;
+  grid-gap: $spacing-medium;
   align-items: center;
 }
 

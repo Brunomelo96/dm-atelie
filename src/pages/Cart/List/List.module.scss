@@ -1,0 +1,17 @@
+@import '@/components/layout.module.scss';
+@import '@/components/theme.module.scss';
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xxxl;
+
+  & > * {
+    padding-bottom: $spacing-xxxl;
+    border-bottom: 1px solid $background-primary;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
