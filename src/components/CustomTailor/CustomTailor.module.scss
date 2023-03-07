@@ -1,6 +1,5 @@
 @import '@/components/mixins/index.module.scss';
 @import '@/components/theme.module.scss';
-@import '@/components/layout.module.scss';
 
 .Button {
   @include Card($primary);

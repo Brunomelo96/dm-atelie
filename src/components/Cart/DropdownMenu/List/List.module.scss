@@ -3,10 +3,10 @@
 .Wrapper {
   display: flex;
   flex-direction: column;
-  gap: $spacing-xxxl;
+  gap: $spacing-medium;
 
   & > * {
-    padding-bottom: $spacing-xxxl;
+    padding-bottom: $spacing-medium;
     border-bottom: 1px solid $background-primary;
 
     &:last-child {

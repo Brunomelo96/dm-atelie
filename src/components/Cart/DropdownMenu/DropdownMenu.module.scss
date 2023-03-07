@@ -1,0 +1,9 @@
+@import '@/components/theme.module.scss';
+@import '@/components/mixins/index.module.scss';
+
+.Wrapper {
+  @include Card($background-secondary);
+  position: absolute;
+  width: 40ch;
+  height: 40ch;
+}

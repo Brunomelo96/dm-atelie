@@ -1,7 +1,7 @@
-import Text from '@/components/Text'
 import { CartListItem } from '@/models/cart'
 import {  Outfit as OutfitModel } from '@/models/outfit'
 import ListItem from '../ListItem'
+import Description from './Description'
 import style from './OutfitItem.module.scss'
 
 type OutfitItemProps = CartListItem & OutfitModel
@@ -21,37 +21,22 @@ const OutfitItem: React.FC<OutfitItemProps> = ({
     onAdd={onAdd}
     onRemove={onRemove}
   >
-    <div
+    <ul
       className={style.Wrapper}
     >
-      <span>
-        <Text
-          text='Estilo:'
-          weight='bold'
-        />
-        <Text
-          text={kind}
-        />
-      </span>
-      <span>
-        <Text
-          text='Modelo'
-          weight='bold'
-        />
-        <Text
-          text={model.join(', ')}
-        />
-      </span>
-      <span>
-        <Text
-          text='Tamanho:'
-          weight='bold'
-        />
-        <Text
-          text={size}
-        />
-      </span>
-    </div>
+      <Description
+        title='Estilo'
+        text={kind}
+      />
+      <Description
+        title='Modelo'
+        text={model.join(', ')}
+      />
+      <Description
+        title='Tamanho'
+        text={size}
+      />
+    </ul>
   </ListItem>
 )
 

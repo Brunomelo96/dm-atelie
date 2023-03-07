@@ -1,8 +1,12 @@
-@import '@/components/layout.module.scss';
+@import '@/components/theme.module.scss';
 @import '@/components/mixins/index.module.scss';
 @import '@/components/placeholders/index.module.scss';
 
 .Wrapper {
+  position: relative;
+}
+
+.Grid {
   display: grid;
   grid-template-columns: 6ch 20ch 24ch;
   grid-gap: $spacing-medium;

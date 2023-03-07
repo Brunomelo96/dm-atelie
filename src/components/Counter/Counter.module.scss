@@ -3,14 +3,14 @@
 
 .Wrapper {
   display: flex;
-  justify-content: space-evenly;
   flex-shrink: 0;
+  justify-content: space-evenly;
 }
 
 .Content {
   @extend .Circle;
-  width: 40px;
-  height: 40px;
   box-shadow: 0px 2px 2px $primary;
   outline: none;
+  width: 40px;
+  height: 40px;
 }
