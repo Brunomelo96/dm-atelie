@@ -10,6 +10,7 @@ const OutfitItem: React.FC<OutfitItemProps> = ({
   name,
   count,
   kind,
+  price,
   model,
   size,
   onAdd,
@@ -17,6 +18,7 @@ const OutfitItem: React.FC<OutfitItemProps> = ({
 }) => (
   <ListItem
     name={name}
+    price={price}
     count={count}
     onAdd={onAdd}
     onRemove={onRemove}

@@ -1,3 +1,5 @@
+import Text from '@/components/Text'
+import Total from '@/components/Total'
 import { useCart } from '@/contexts/useCart'
 import services from '@/data/services'
 import Item from './Item'
@@ -26,6 +28,11 @@ const List = () => {
           />
         ))
       }
+      <li
+        className={style.Total}
+      >
+        <Total prices={services.map((value) => value.price) as string[]} />
+      </li>
     </ul>
   )
 }

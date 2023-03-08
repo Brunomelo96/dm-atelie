@@ -1,6 +1,8 @@
+@import '@/components/theme.module.scss';
 
 .Grid {
   display: grid;
-  grid-template-columns: 20ch 1fr 40ch;
+  grid-template-columns: 20ch 1fr 40ch 10ch;
   align-items: center;
+  grid-gap: $spacing-medium;
 }

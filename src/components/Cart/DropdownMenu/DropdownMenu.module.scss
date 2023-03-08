@@ -6,4 +6,9 @@
   position: absolute;
   width: 40ch;
   height: 40ch;
+  top: 6ch;
+}
+
+.ConfirmationLink {
+  @include Link($spacing-medium);
 }

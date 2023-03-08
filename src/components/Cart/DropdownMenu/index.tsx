@@ -1,4 +1,7 @@
 import Text from '@/components/Text'
+import { Routes } from '@/models/routes'
+import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import style from './DropdownMenu.module.scss'
 import List from './List'
 
@@ -9,15 +12,34 @@ interface DropdownMenuProps {
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({
   isOpen,
-  // onClose,
+  onClose,
 }) => {
-
   if (!isOpen) {
     return null
   }
 
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  const handleDropdownClick = (event: MouseEvent) => {
+    if (!dropdownRef?.current?.contains(event.target as Node)) {
+      event.stopPropagation()
+      event.preventDefault()
+      onClose()
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('mouseup', handleDropdownClick)
+
+    return () => {
+      document.removeEventListener('mouseup', handleDropdownClick)
+    }
+  }, [])
+
+
   return (
     <section
+      ref={dropdownRef}
       className={style.Wrapper}
     >
       <Text
@@ -26,6 +48,16 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
         fontSize="medium"
       />
       <List />
+      <Link
+        to={Routes['HOME']}
+        className={style.ConfirmationLink}
+      >
+        <Text
+          text='Enviar pedido!'
+          fontSize='medium'
+          weight='bold'
+        />
+      </Link>
     </section>
   )
 }

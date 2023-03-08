@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.CartIconLink {
+.Button {
   @extend .Clickable;
   @include BoxShadow($primary);
   display: flex;
@@ -24,6 +24,9 @@
   background-color: $primary;
   width: 6ch;
   height: 6ch;
+
+  outline: none;
+  border: none;
 }
 
 .CartLink {

@@ -6,7 +6,7 @@ const services = [
   {
     id: '1',
     name: 'Jujubs',
-    price: '100,00',
+    price: '100.00',
     averageTime: '1',
     description: 'a',
     image: '1'
@@ -14,7 +14,7 @@ const services = [
   {
     id: '2',
     name: 'Jujubs',
-    price: '100,00',
+    price: '100.00',
     averageTime: '1',
     description: 'a',
     image: '1'
@@ -22,7 +22,7 @@ const services = [
   {
     id: '12312',
     name: 'Jujubs',
-    price: '100,00',
+    price: '100.00',
     averageTime: '1',
     description: 'a',
     image: '1'

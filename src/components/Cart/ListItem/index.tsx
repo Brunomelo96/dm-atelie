@@ -9,6 +9,7 @@ export interface ListItemProps extends CartListItem {
 
 const ListItem: React.FC<ListItemProps> = ({
   name,
+  price,
   count,
   children,
   onAdd,
@@ -25,6 +26,10 @@ const ListItem: React.FC<ListItemProps> = ({
       count={count}
       onAdd={onAdd}
       onRemove={onRemove}
+    />
+    <Text
+      text={price}
+      fontSize='large'
     />
   </li>
 )

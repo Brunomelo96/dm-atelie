@@ -16,25 +16,19 @@ const PageHeader: React.FC<PageHeaderProps> = ({ count }) => {
     <div
       className={style.Wrapper}
     >
-      <button
-        style={{width: '5ch'}}
-        onClick={() => setDropdownOpen(!isDropdownOpen)}
-      >
-          conferir
-      </button>
       <section
         className={style.Grid}
       >
-        <Link
-          to={Routes['CART']}
-          className={style.CartIconLink}
+        <button
+          onClick={() => setDropdownOpen(!isDropdownOpen)}
+          className={style.Button}
           aria-label='Ir para meu carrinho'
         >
           <Text
             text='🛒'
             fontSize='large'
           />
-        </Link>
+        </button>
         <Text
           text={count === 0 ? 'Seu carrinho está vazio' : `${count} items no meu carrinho`}
           fontSize="medium"
@@ -44,7 +38,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ count }) => {
           className={style.CartLink}
         >
           <Text
-            text="Finalizar pedido!"
+            text="Revisar pedido!"
             fontSize='medium'
             weight='bold'
           />

@@ -13,6 +13,7 @@ export interface CartContext extends CartState {
 
 export interface CartListItem {
   name: string,
+  price: string,
   count: number,
   onAdd: VoidFunction,
   onRemove: VoidFunction,

@@ -7,6 +7,7 @@ type ServiceItemProps = CartListItem & ServiceModel
 const ServiceItem: React.FC<ServiceItemProps> = ({
   name,
   count,
+  price,
   onAdd,
   onRemove,
   description
@@ -14,6 +15,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
   <ListItem
     name={name}
     count={count}
+    price={price}
     onAdd={onAdd}
     onRemove={onRemove}
   >

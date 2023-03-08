@@ -21,13 +21,13 @@ const Item: React.FC<ItemProps> = ({
         text={name}
         weight='bold'
       />
-      <Text
-        text={price}
-      />
       <Counter
         count={count}
         onAdd={onAdd}
         onRemove={onRemove}
+      />
+      <Text
+        text={price}
       />
     </li>
   )
