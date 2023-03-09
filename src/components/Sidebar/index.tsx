@@ -1,6 +1,6 @@
-import Contact from '@/components/Contact'
-import Collection from '@/components/Collections'
-import CustomTailor from '@/components/CustomTailor'
+import Contact from './Contact'
+import Collections from './Collections'
+import CustomTailor from './CustomTailor'
 import style from './Sidebar.module.scss'
 
 const Sidebar = () => (
@@ -12,7 +12,7 @@ const Sidebar = () => (
         <Contact />
       </li>
       <li>
-        <Collection />
+        <Collections />
       </li>
       <li>
         <CustomTailor />

@@ -1,7 +1,9 @@
 import Text from '@/components/Text'
 import { Outfit } from '@/models/outfit'
 import Item from './Item'
-import style from './News.module.scss'
+import style from './Collections.module.scss'
+import GoBack from '@/components/GoBack'
+import { Routes } from '@/models/routes'
 
 const outfits: Outfit[] = [
   {
@@ -36,10 +38,14 @@ const outfits: Outfit[] = [
   }
 ]
 
-const News = () => (
+const Collections = () => (
   <section
     className={style.Wrapper}
   >
+    <GoBack
+      text='voltar'
+      to='HOME'
+    />
     <Text
       text="Lançamentos"
       weight="bold"
@@ -62,4 +68,4 @@ const News = () => (
   </section>
 )
 
-export default News
+export default Collections

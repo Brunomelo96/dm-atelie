@@ -26,6 +26,30 @@ const services = [
     averageTime: '1',
     description: 'a',
     image: '1'
+  },
+  {
+    id: '190',
+    name: 'Jujubs',
+    price: '100.00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
+  },
+  {
+    id: '180',
+    name: 'Jujubs',
+    price: '100.00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
+  },
+  {
+    id: '120837180318',
+    name: 'Jujubs',
+    price: '100.00',
+    averageTime: '1',
+    description: 'a',
+    image: '1'
   }
 ]
 

@@ -3,6 +3,7 @@ import { RouteRender, Routes } from '@/models/routes'
 import usePage from '@/components/Page'
 import Home from '@/pages/Home'
 import Cart from '@/pages/Cart'
+import Collections from '@/pages/Collections'
 
 const routes: RouteRender[] = [
   {
@@ -14,6 +15,11 @@ const routes: RouteRender[] = [
     path: Routes.CART,
     exact: true,
     element: <Cart />
+  },
+  {
+    path: Routes.COLLECTIONS,
+    exact: true,
+    element: <Collections />
   }
 ]
 

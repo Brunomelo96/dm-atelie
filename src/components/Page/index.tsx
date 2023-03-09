@@ -16,7 +16,7 @@ const Page = ({ children }: PageProps) => {
         className={style.Main}
       >
         <Cart.PageHeader count={getCount()} />
-        <div className={style.Wrapper}>
+        <div className={style.Content}>
           {children}
         </div>
       </main>

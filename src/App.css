@@ -3,3 +3,7 @@
   margin: 0 auto;
   padding: 4ch;
 }
+
+.App {
+  height: 100%;
+}

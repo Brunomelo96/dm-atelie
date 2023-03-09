@@ -6,7 +6,7 @@ import { Routes } from '@/models/routes'
 const Collections = () => (
   <Link
     className={style.Wrapper}
-    to={Routes['HOME']}
+    to={Routes['COLLECTIONS']}
     aria-label='Ir para Coleções'
   >
     <Text
