@@ -4,8 +4,7 @@
   display: flex;
   gap: $spacing-mini;
   
-  
-  @media (min-width: $window-default) {
+  @media (min-width: $window-width-default) {
     flex-direction: column;
     gap: $spacing-large;
   }

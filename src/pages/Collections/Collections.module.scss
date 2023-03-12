@@ -7,7 +7,21 @@
 }
 
 .List {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-gap: $spacing-medium;
+  
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+
+  @media (min-width: $window-width-small) {
+    display: grid;
+    grid-gap: $spacing-medium;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  @media (min-width: $window-width-default) {
+    display: grid;
+    grid-gap: $spacing-medium;
+    
+    grid-template-columns: repeat(3, 3fr);
+  }
 }

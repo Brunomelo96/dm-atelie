@@ -31,9 +31,17 @@ $border-radius-rounder:16px;
 $border-radius-chungus: 32px;
 $border-radius-circle:50%;
 
-// Window sizes
-$window-large: 1280px;
-$window-default: 1080px;
-$window-small: 600px;
-$window-mini: 340px;
+// Window widths
+$window-width-large: 1280px;
+$window-width-default: 1080px;
+$window-width-small: 600px;
+$window-width-mini: 480px;
+$window-width-micro: 340px;
+// Window heights
+
+$window-height-large: 1080px;
+$window-height-default: 900;
+$window-height-small: 700;
+$window-height-mini: 600px;
+$window-height-micro: 500px;
 

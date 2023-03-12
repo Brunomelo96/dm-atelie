@@ -21,16 +21,15 @@
 }
 
 .Grid {
-  
-  height: 100%;
-  
   display: flex;
   flex-direction: column;
   gap: $spacing-medium;
   padding: 1ch;
+  height: calc(100% - 2ch);
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: $window-width-default) {
     padding: 4ch;
+    height: calc(100% - 8ch);
     display: grid;
     grid-template-columns: .9fr .3fr;
     grid-column-gap: $spacing-xxxl;

@@ -1,7 +1,5 @@
 import Text from '@/components/Text'
-import { Routes } from '@/models/routes'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import DropdownMenu from '../DropdownMenu'
 import HeaderLink from './HeaderLink'
 import style from './PageHeader.module.scss'
