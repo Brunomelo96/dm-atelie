@@ -1,6 +1,8 @@
 import Button from '@/components/Button'
 import GoBack from '@/components/GoBack'
 import Text from '@/components/Text'
+import { sendOrder } from '@/helpers/whatsapp'
+import { Link } from 'react-router-dom'
 import style from './Cart.module.scss'
 import List from './List'
 
@@ -20,12 +22,17 @@ const Cart = () => {
         color='title'
       />
       <List />
-      <div>
-        <Button
-          onClick={() => { console.log('a') }}
-          text='Enviar pedido!'
+      <Link
+        className={style.ItemLink}
+        to={sendOrder('oi')}
+        target='_blank'
+      >
+        <Text
+          text='Enviar Pedido!'
+          weight='bold'
+          fontSize='large'
         />
-      </div>
+      </Link>
     </section>
   )
 }

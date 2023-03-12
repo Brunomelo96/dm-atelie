@@ -1,5 +1,5 @@
 import Text from '@/components/Text'
-import { Routes } from '@/models/routes'
+import { sendOrder } from '@/helpers/whatsapp'
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import style from './DropdownMenu.module.scss'
@@ -47,9 +47,11 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
         weight="bold"
         fontSize="medium"
       />
-      <List />
+      <List
+      />
       <Link
-        to={Routes['HOME']}
+        target='_blank'
+        to={sendOrder('oi')}
         className={style.ConfirmationLink}
       >
         <Text

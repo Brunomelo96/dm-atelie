@@ -1,0 +1,18 @@
+@import '@/components/theme.module.scss';
+
+@mixin Scrollbar() {
+  overflow-y: auto;
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: darken($background-secondary, 1.5);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: $primary;
+  }
+}

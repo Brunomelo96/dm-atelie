@@ -2,6 +2,11 @@
 
 .List {
   display: flex;
-  flex-direction: column;
-  gap: $spacing-large;
+  gap: $spacing-mini;
+  
+  
+  @media (min-width: $window-default) {
+    flex-direction: column;
+    gap: $spacing-large;
+  }
 }

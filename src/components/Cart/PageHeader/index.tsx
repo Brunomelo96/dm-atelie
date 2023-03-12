@@ -3,6 +3,7 @@ import { Routes } from '@/models/routes'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import DropdownMenu from '../DropdownMenu'
+import HeaderLink from './HeaderLink'
 import style from './PageHeader.module.scss'
 
 interface PageHeaderProps {
@@ -33,16 +34,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ count }) => {
           text={count === 0 ? 'Seu carrinho está vazio' : `${count} items no meu carrinho`}
           fontSize="medium"
         />
-        <Link
-          to={Routes['CART']}
-          className={style.CartLink}
-        >
-          <Text
-            text="Revisar pedido!"
-            fontSize='medium'
-            weight='bold'
-          />
-        </Link>
+        <HeaderLink />
       </section>
       <DropdownMenu
         isOpen={isDropdownOpen}

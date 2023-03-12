@@ -1,0 +1,5 @@
+@import '@/components/mixins/index.module.scss';
+
+.CartLink {
+  @include Link($spacing-medium);
+}

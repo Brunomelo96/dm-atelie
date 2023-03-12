@@ -1,6 +1,6 @@
-import Text from '@/components/Text'
+import { Routes } from '@/models/routes'
 import { useEffect, useState } from 'react'
-import style from './CustomTailor.module.scss'
+import ListLink from '../ListLink'
 
 const CustomTailor = () => {
   const [clicked, setClicked] = useState(false)
@@ -14,44 +14,17 @@ const CustomTailor = () => {
       }
     }
   })
+
+  return (
+    <ListLink
+      to={Routes['HOME']}
+      ariaLabel={clicked ? 'Em construção' : 'Ir para customizações'}
+      icon={clicked ? '🛠' : '🪡'}
+      message={clicked ? 'Oops, em construção!' : 'Qual a roupinha dos seus sonhos?'}
+      shortMessage={clicked ? 'Em construção' : 'Customizações'}
+      onClick={() => { setClicked(!clicked) }}
+    />
+  )
   
-  return clicked
-    ? (
-      <div
-        className={style.Wrapper}
-        onClick={() => setClicked(!clicked)}
-      >
-        <Text
-          text={'🛠'}
-          fontSize="xxxl"
-        />
-        <Text
-          text="Oops, em construção!"
-          fontSize="large"
-          weight='bolder'
-        />
-        <Text
-          text="Em breve você poderá pedir suas roupinhas customizadas!"
-          fontSize="default"
-          weight='bolder'
-        />
-      </div>
-    ) 
-    : (
-      <button
-        className={style.Button}
-        onClick={() => setClicked(!clicked)}
-      >
-        <Text
-          text={'🪡'}
-          fontSize="xxxl"
-        />
-        <Text
-          text="Qual a roupinha dos seus sonhos?"
-          fontSize="large"
-          weight='bolder'
-        />
-      </button>
-    )
 }
 export default CustomTailor
