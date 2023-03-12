@@ -4,8 +4,9 @@
 .Wrapper {
   @include Card($background-secondary);
   position: absolute;
-  width: 40ch;
+  right: -1ch;
   top: 6ch;
+  z-index: 4000;
 }
 
 .ConfirmationLink {

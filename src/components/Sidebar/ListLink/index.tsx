@@ -34,10 +34,14 @@ const ListLink: React.FC<ListLinkProps> = ({
       target={target}
       onClick={() => onClick?.()}
     >
-      <Text
-        text={icon}
-        fontSize={width >= 1080 ? 'xxxl' : 'medium'}
-      />
+      {
+        width >= 600 && (
+          <Text
+            text={icon}
+            fontSize={width >= 1080 ? 'xxxl' : 'medium'}
+          />
+        )
+      }
       <Text
         text={width >= 1080 ? message : shortMessage}
         fontSize={width >= 1080 ? 'large' : 'medium'}

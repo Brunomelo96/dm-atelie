@@ -1,5 +1,9 @@
 @import '@/components/mixins/index.module.scss';
 
 .CartLink {
-  @include Link($spacing-medium);
+  @include Link($spacing-default);
+
+  @media (min-width: $window-height-mini) {
+    @include Link($spacing-medium);
+  }
 }

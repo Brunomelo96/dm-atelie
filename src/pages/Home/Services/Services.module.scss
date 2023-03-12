@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-medium;
+  height: 100%;
 }
 
 .List {
@@ -14,14 +15,18 @@
   flex-wrap: wrap;
   overflow-y: auto;
   height: 100%;
-  
+
   & > * {
     width: 100%;
   }
   
 
-  @media (max-width: $window-width-default) {
+  @media (max-width: $window-width-small) {
     max-height: 265px; 
+  }
+
+  @media (max-width: $window-width-default) {
+    max-height: 340px; 
   }
 
   @media (min-width: $window-width-mini) {

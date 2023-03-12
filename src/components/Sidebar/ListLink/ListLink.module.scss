@@ -2,12 +2,14 @@
 @import '@/components/theme.module.scss';
 
 .Wrapper {
-  @include Link($spacing-medium);
+  @include Link($spacing-default);
   align-items: center;
   text-align: center;
-  gap: $spacing-medium;
+  gap: $spacing-mini;
   
-  @media (min-width: 1080px) {
+  @media (min-width: $window-width-default) {
     flex-direction: column;
+    gap: $spacing-medium;
+    @include Link($spacing-medium);
   }
 }

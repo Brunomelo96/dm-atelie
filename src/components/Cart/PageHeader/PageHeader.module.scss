@@ -10,7 +10,13 @@
   display: grid;
   grid-template-columns: 6ch 20ch 24ch;
   grid-gap: $spacing-medium;
+
   align-items: center;
+
+  @media (max-width: $window-width-mini) {
+    grid-template-columns: 6ch 12ch 15ch;
+    grid-gap: $spacing-nano;
+  }
 }
 
 .Button {
