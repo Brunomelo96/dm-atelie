@@ -7,21 +7,35 @@
 }
 
 .List {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: $spacing-medium;
-  max-height: 1px;
+  flex-wrap: wrap;
   overflow-y: auto;
+  height: 100%;
   
+  & > * {
+    width: 100%;
+  }
+  
+
+  @media (max-width: $window-width-default) {
+    max-height: 265px; 
+  }
+
   @media (min-width: $window-width-mini) {
-    display: grid;
-    grid-gap: $spacing-medium;
-    grid-template-columns: repeat(2, 2fr);
+    & > * {
+      width: 47%;
+    }
+    // display: grid;
+    // grid-gap: $spacing-medium;
+    // grid-template-columns: repeat(2, 2fr);
   }
 
   @media (min-width: $window-width-default) {
-    display: grid;
-    grid-gap: $spacing-medium;
-    grid-template-columns: repeat(3, 3fr);
+    & > * {
+      width: 30%;
+    }
   }
 }
